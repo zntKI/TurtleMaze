@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-application_surface_draw_enable(false);
-
-var camera = view_get_camera(0);
-var cam_width = camera_get_view_width(camera);
-var cam_height = camera_get_view_height(camera);
-
-light_surface = surface_create(cam_width, cam_height);
+surf = -1;
+//var rect_x = camera_get_view_x(view_camera[1])
+//var rect_y = camera_get_view_y(view_camera[1])
+//var rect_x2 = rect_x + view_wport[1];
+//var rect_y2 = rect_y + view_hport[1];
+draw_set_color(c_red)
+draw_rectangle(10, 10, 300, 200, false)
