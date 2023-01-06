@@ -24,14 +24,18 @@ draw_set_color(c_black);
 draw_rectangle(0, 0, _cw, _ch, 0);
 gpu_set_blendmode(bm_subtract);
 var scale_player_sprite = 3 + 0.125 * sin(current_time / 150);
-var scale_exit_sprite = 1 + 0.125 * sin(current_time / 150);
+var scale_basic_sprite = 1 + 0.125 * sin(current_time / 150);
 with (obj_player)
     {
 		draw_sprite_ext(spr_light, 0, self.x, self.y, scale_player_sprite + 1, scale_player_sprite, 0, c_white, 1);
     }
 with (obj_exit)
 {
-	draw_sprite_ext(spr_light, 0, self.x, self.y, scale_exit_sprite, scale_exit_sprite, 0, c_white, 1);
+	draw_sprite_ext(spr_light, 0, self.x, self.y, scale_basic_sprite, scale_basic_sprite, 0, c_white, 1);
+}
+with (obj_food)
+{
+	draw_sprite_ext(spr_light, 0, self.x, self.y, scale_basic_sprite, scale_basic_sprite, 0, c_white, 1);
 }
 gpu_set_blendmode(bm_normal);
 draw_set_alpha(1);
