@@ -8,8 +8,8 @@ var player = obj_player;
 if	(player.player_health < player.player_max_health)
 {
 	player.player_health++;
+	player.alarm[0] = player.time_damage;
 }
-
 //var tilemap = layer_tilemap_get_id(layer_get_id("Tiles_main"));
 //
 //var spawn_radius_min = 100;

@@ -6,5 +6,5 @@ var xoffset = 36;
 
 for	(var i = 0; i < player_health; i++)
 {
-	draw_sprite_ext(spr_heart, 0, view_wport[0] - (xoffset * 6) + (xoffset * i), 30, 2, 2, 0, c_white, 1);
+	draw_sprite_ext(spr_heart, 0, 1500 + (xoffset * i), 30, 2, 2, 0, c_white, 1);
 }

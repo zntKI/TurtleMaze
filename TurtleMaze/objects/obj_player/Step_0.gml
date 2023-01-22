@@ -50,6 +50,9 @@ if (_hspd != 0 || _vspd != 0)
 		var down_left = tilemap_get_at_pixel(tiles, bbox_left, bbox_bottom - collisionSpeed);
 		var down_right = tilemap_get_at_pixel(tiles, bbox_right, bbox_bottom - collisionSpeed);
 		
+		show_debug_message(down_left);
+		show_debug_message(down_right);
+		
 		if	down_left == 0 && down_right == 0
 		{
 			y += _yadd;

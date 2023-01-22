@@ -12,7 +12,7 @@ tiles = layer_tilemap_get_id(layerId);
 
 player_health = 5;
 player_max_health = 5;
-time_damage = 300;
+time_damage = 60;
 alarm[0] = time_damage;
 
 //var tilemap = layer_tilemap_get_id(layer_get_id("Tiles_main"));
