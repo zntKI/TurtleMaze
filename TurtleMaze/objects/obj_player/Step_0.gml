@@ -88,15 +88,15 @@ if	keyboard_check(vk_nokey)
 	{
 		sprite_index = spr_player_right_still;
 	}
-	if	sprite_index == spr_player_left_move
+	else if	sprite_index == spr_player_left_move
 	{
 		sprite_index = spr_player_left_still;
 	}
-	if	sprite_index == spr_player_front_move
+	else if	sprite_index == spr_player_front_move
 	{
 		sprite_index = spr_player_front_still;
 	}
-	if	sprite_index == spr_player_back_move
+	else if	sprite_index == spr_player_back_move
 	{
 		sprite_index = spr_player_back_still;
 	}

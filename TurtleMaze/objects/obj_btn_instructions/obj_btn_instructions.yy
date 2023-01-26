@@ -32,7 +32,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"btn_text","path":"objects/obj_btn_parent/obj_btn_parent.yy",},"objectId":{"name":"obj_btn_parent","path":"objects/obj_btn_parent/obj_btn_parent.yy",},"value":"Help",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"btn_text","path":"objects/obj_btn_parent/obj_btn_parent.yy",},"objectId":{"name":"obj_btn_parent","path":"objects/obj_btn_parent/obj_btn_parent.yy",},"value":"Guide",},
   ],
   "parent": {
     "name": "menu",

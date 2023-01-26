@@ -22,14 +22,23 @@ else
 			(((self.x - pos_x < spawn_radius_min || self.x - pos_x > spawn_radius_max) && (pos_x - self.x < spawn_radius_min || pos_x - self.x > spawn_radius_max)) ||
 			((self.y - pos_y < spawn_radius_min || self.y - pos_y > spawn_radius_max) && (pos_y - self.y < spawn_radius_min || pos_y - self.y > spawn_radius_max))))
 	{
-		show_debug_message(player_health);
 		pos_x = irandom_range(0, room_width);
 		//show_debug_message("PosX: {0}", pos_x);
 		pos_y = irandom_range(0, room_height);
 		//show_debug_message("PosY: {0}", pos_y);
 	}
 	
-	instance_create_layer(pos_x, pos_y, "Instances", obj_food);
+	var num = irandom_range(1, 3);
+	
+	if (num == 1) {
+	    instance_create_layer(pos_x, pos_y, "Instances_Items", obj_bottle);
+	}
+	else if (num == 2) {
+	    instance_create_layer(pos_x, pos_y, "Instances_Items", obj_can);
+	}
+	else {
+		instance_create_layer(pos_x, pos_y, "Instances_Items", obj_bag);
+	}
 	
 	player_health -= 1;
 	alarm_set(0, time_damage);

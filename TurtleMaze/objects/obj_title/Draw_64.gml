@@ -4,7 +4,8 @@
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text(x, y, "You are a turtle!\nYou have to escape from this maze\nyou've got magically stuck into\nwhile dreaming about food.");
+draw_set_color(c_white);
+draw_text(x, y, "Turtle - Below water");
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
